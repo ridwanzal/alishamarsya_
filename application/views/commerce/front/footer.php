@@ -1,0 +1,125 @@
+
+<section class="newsletters">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-xs-12">
+                <h4>Subscribe our new's letter</h4>
+            </div>
+            <div class="col-lg-6 col-md-6 col-xs-12">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Your email address" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section_footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <ul class="list-unstyled text-small listfooters">
+                    <li>
+                    <a href="<?php echo base_url();?>"><img width="250" style="margin-right:40px;margin-bottom:27px;" src="<?php echo base_url()?>/assets/logo_kaostum_panjang_black.svg"></a>
+                    </li>
+                    <li class="text-muted">
+                        Jl. Angkatan 66 No.ujung, Pipa Jaya, Kec. Kemuning, Kota Palembang, Sumatera Selatan
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                <ul class="list-unstyled text-small listfooters">
+                    <li><a class="text-muted" href="#">About Us</a></li>
+                    <li><a class="text-muted" href="#">Fanbook</a></li>
+                    <li><a class="text-muted" href="#">Blog</a></li>
+                    <li><a class="text-muted" href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                <ul class="list-unstyled text-small listfooters">
+                <li><a class="text-muted" href="#">Contact Us</a></li>
+                    <li><a class="text-muted" href="#">FAQ's</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                <div class="listfooters" style="display:flex;float:left;" id="footer_rights2">
+                        <a href="https://www.facebook.com/Rumah-Sakit-Islam-Ar-rasyid-114286013618366"><img src="https://image.flaticon.com/icons/svg/145/145802.svg" style="width:40px;"></a>
+                        <a href="https://instagram.com/rs_islam_arrasyid"><img src="https://image.flaticon.com/icons/svg/145/145805.svg" style="width:40px;"></a>
+                        <!-- <a href="#"><img src="https://image.flaticon.com/icons/svg/145/145812.svg" style="width:40px;"></a> -->
+                        <!-- <a href="#"><img src="https://image.flaticon.com/icons/svg/1384/1384060.svg" style="width:40px;"></a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="footer_last">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-xs-12">
+                <p class="text-muted">Copyright © 2020. All Right Reserved. <a style="" href='http://marcodigitalpartner.com/'>Marco Digital Partner.</a>
+                <div class="">
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-xs-12">
+                <div style="display:flex;float:right;" id="footer_rights">
+                    <a href="<?php base_url();?>">Home</a>
+                    <a href="<?php base_url();?>galeri">Men's</a>
+                    <a href="<?php base_url();?>karir">Women's</a>
+                    <a href="<?php base_url();?>kontak">Kid's</a>
+                    <a href="<?php base_url();?>kontak">Gifts</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<a id="wafloats" href="https://api.whatsapp.com/send?phone=+6281928529335&text=Assalamu'alaikum Wr Wb" class="floatwa" target="_blank"><i class="fa fa-whatsapp my-floatwa"></i></a>
+<!-- Js Plugins -->
+<script src="<?php echo base_url();?>/assets/frontview/js/jquery-3.3.1.min.js"></script>
+<script src="<?php echo base_url();?>/assets/frontview/js/bootstrap.min.js"></script>
+<script src="<?php echo base_url();?>/assets/frontview/js/jquery.magnific-popup.min.js"></script>
+<script src="<?php echo base_url();?>/assets/frontview/js/jquery-ui.min.js"></script>
+<script src="<?php echo base_url();?>/assets/frontview/js/jquery.nice-select.min.js"></script>
+<script src="<?php echo base_url();?>/assets/frontview/js/jquery.slicknav.js"></script>
+<script src="<?php echo base_url();?>/assets/frontview/js/owl.carousel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
+<script src="<?php echo base_url();?>/assets/frontview/js/main.js"></script>
+<script src="<?php echo base_url();?>/assets/commerce/js/jquery.zoom.min.js"></script>
+<script src="<?php echo base_url();?>/assets/commerce/lightslider/js/lightslider.min.js" type="text/javascript"></script>
+<script>
+    $(document).ready(function(){
+        $('.image_detail')
+        .wrap('<span style="display:inline-block"></span>')
+        .css('display', 'block')
+        .parent()
+        .zoom();
+
+        $("#pesan_form").on('click', function(){
+            $("#inputform").toggle  ();
+        }); 
+
+        $('#imageGallery').lightSlider({
+            item:1,
+            loop:true,
+            slideMove:2,
+            auto:true,
+            pauseOnHover: true,
+            slideMargin:0,
+            enableDrag: false,
+            pager : false,
+        });
+
+        $('#vertical').lightSlider({
+            gallery:true,
+            item:1,
+            vertical:true,
+            verticalHeight:400,
+            vThumbWidth:50,
+            thumbItem:8,
+            thumbMargin:4,
+            slideMargin:0
+        });
+    })
+</script>
