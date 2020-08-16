@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Kaostum.id</title>
+    <title>Alisha Marsya</title>
     <link rel="icon" href="<?php echo base_url();?>/assets/frontview/img/favicon.png" sizes="16x16" type="image/png">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="<?php echo base_url()?>assets/backview/vendor/bootstrap/css/bootstrap.min.css">
