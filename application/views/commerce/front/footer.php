@@ -26,7 +26,7 @@
                     <a href="<?php echo base_url();?>"><img width="220" style="margin-right:40px;margin-bottom:20px;" src="<?php echo base_url()?>/assets/logo.svg"/></a>
                     </li>
                     <li class="text-muted">
-                        Jl. Angkatan 66 No.ujung, Pipa Jaya, Kec. Kemuning, Kota Palembang, Sumatera Selatan
+                        Jl SM Mansyur Gang Bayu Lestari No 7 Bukit Lama Palembang
                     </li>
                 </ul>
             </div>
@@ -66,17 +66,16 @@
             <div class="col-lg-6 col-md-6 col-xs-12">
                 <div style="display:flex;float:right;" id="footer_rights">
                     <a href="<?php base_url();?>">Home</a>
-                    <a href="<?php base_url();?>galeri">Men's</a>
-                    <a href="<?php base_url();?>karir">Women's</a>
-                    <a href="<?php base_url();?>kontak">Kid's</a>
-                    <a href="<?php base_url();?>kontak">Gifts</a>
+                    <a href="<?php base_url();?>galeri">Bantal</a>
+                    <a href="<?php base_url();?>karir">Tudung Saji</a>
+                    <a href="<?php base_url();?>kontak">Magic Com</a>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<a id="wafloats" href="https://api.whatsapp.com/send?phone=+6281928529335&text=Assalamu'alaikum Wr Wb" class="floatwa" target="_blank"><i class="fa fa-whatsapp my-floatwa"></i></a>
+<a id="wafloats" href="https://api.whatsapp.com/send?phone=++628117870108&text=Assalamualaikum wr wb, Alisha Marsya" class="floatwa" target="_blank"><i class="fa fa-whatsapp my-floatwa"></i></a>
 <!-- Js Plugins -->
 <script src="<?php echo base_url();?>/assets/frontview/js/jquery-3.3.1.min.js"></script>
 <script src="<?php echo base_url();?>/assets/frontview/js/bootstrap.min.js"></script>

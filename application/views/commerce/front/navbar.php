@@ -23,16 +23,16 @@
                 <a class="nav-link " href="<?php echo base_url();?>produk/semua">MAGIC COM <span class="sr-only"></span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="<?php echo base_url();?>produk/semua">GIFTS <span class="sr-only"></span></a>
+                <a class="nav-link " href="<?php echo base_url();?>">KONTAK <span class="sr-only"></span></a>
               </li>
-              <li class="nav-item dropdown">
+              <!-- <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   INFO
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <a class="dropdown-item " href="<?php echo base_url();?>blog">BLOG</a>
                 </div>
-              </li>
+              </li> -->
             </ul>
             <form method="GET" action="<?php echo base_url(); ?>/commerce_main/search_product">
                 <div style:display:flex; class="searchings">
