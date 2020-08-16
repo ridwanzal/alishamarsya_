@@ -92,16 +92,16 @@
                                 LAMAN ADMIN 
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link" href="<?php echo base_url(); ?>admin/kategori" ><i class="fa fa-fw fa-ambulance"></i>Kelola Kategori<span class="badge badge-success">6</span></a>
+                                <a class="nav-link" href="<?php echo base_url(); ?>admin/kategori" >Kelola Kategori<span class="badge badge-success">6</span></a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link" href="<?php echo base_url(); ?>admin" ><i class="fa fa-fw fa-ambulance"></i>Kelola Produk<span class="badge badge-success">6</span></a>
+                                <a class="nav-link" href="<?php echo base_url(); ?>admin" >Kelola Produk<span class="badge badge-success">6</span></a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link" href="<?php echo base_url(); ?>admin/banner" ><i class="fa fa-fw fa-ambulance"></i>Kelola Banner<span class="badge badge-success">6</span></a>
+                                <a class="nav-link" href="<?php echo base_url(); ?>admin/banner" >Kelola Banner<span class="badge badge-success">6</span></a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link" href="<?php echo base_url(); ?>admin/bannertwo" ><i class="fa fa-fw fa-ambulance"></i>Kelola Small Banner<span class="badge badge-success">6</span></a>
+                                <a class="nav-link" href="<?php echo base_url(); ?>admin/bannertwo" >Kelola Small Banner<span class="badge badge-success">6</span></a>
                             </li>
                             <div style="border:0.1px solid #206f44; margin-top:15px; margin-bottom:15px;">
                             </div>
