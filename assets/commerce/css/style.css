@@ -1,5 +1,5 @@
 * {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 100%;
 }
 
@@ -102,7 +102,7 @@ body {
     padding-right: 0;
     padding-bottom: 5px;
     /* background :  #2d527c !important; */
-    background: #000000 !important;
+    background: #fff !important;
 }
 
 .infobar {
@@ -120,7 +120,7 @@ body {
 
 .nav_container {
     /* background :  #2d527c !important; */
-    background: #000000 !important;
+    background: #fff !important;
 }
 
 .navmain>li {
@@ -131,11 +131,12 @@ body {
 }
 
 .navmain>li>a {
-    color: #ffffff !important;
+    color: #000 !important;
 }
 
 .footer_last {
-    background: #eee;
+    background: #000;
+    color: #fff;
     padding-top: 25px;
     padding-bottom: 15px;
     border-top: 1px solid #eee;
@@ -468,6 +469,11 @@ body {
     top: 22px;
 }
 
+.navbar-light .navbar-nav .nav-link {
+    font-family: 'PT Sans Narrow', sans-serif !important;
+    letter-spacing: 1.2px;
+}
+
 #wa_navbar:hover {
     opacity: 0.9;
 }
@@ -524,7 +530,7 @@ body {
 
 .price_color {
     color: #ce1a1a;
-    font-weight: bold;
+    font-weight: 400;
 }
 
 .image-box {
@@ -556,8 +562,8 @@ body {
 }
 
 .text_head_product {
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
     font-size: 16px;
     letter-spacing: 0px;
 }
@@ -578,12 +584,12 @@ body {
 }
 
 .card {
-    border-radius: 2px;
-    height: 420px !important;
-    border: 1px solid #ddd;
-    -webkit-box-shadow: 0px 15px 15px -8px rgba(0, 0, 0, 0.05);
+    border-radius: 0px;
+    height: 580px !important;
+    border: 1px solid #eee;
+    /* -webkit-box-shadow: 0px 15px 15px -8px rgba(0, 0, 0, 0.05);
     -moz-box-shadow: 0px 15px 15px -8px rgba(0, 0, 0, 0.05);
-    box-shadow: 0px 15px 15px -8px rgba(0, 0, 0, 0.03);
+    box-shadow: 0px 15px 15px -8px rgba(0, 0, 0, 0.03); */
 }
 
 .linethrough {
@@ -606,12 +612,12 @@ body {
 
 .tab-content {
     padding: 20px 20px 10px 20px;
-    background-color: #f9f9f9;
-    border: 1px solid #f1f1f1;
+    background-color: #fcfcfc;
+    border: 1px solid #fff;
 }
 
 .tab-content>.tab-pane>p {
-    font-family: 'Lato', sans-serif !important;
+    font-family: 'Inter', sans-serif !important;
 }
 
 .linkproducts {
@@ -642,7 +648,7 @@ body {
 }
 
 .product_head_main {
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .nav-link {
@@ -651,4 +657,9 @@ body {
     padding-top: 10px;
     padding-bottom: 10px;
     margin-right: 10px !important;
+}
+
+p {
+    font-weight: 300;
+    font-size: 14px;
 }

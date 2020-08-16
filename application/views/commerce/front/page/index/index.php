@@ -68,12 +68,12 @@
                                         ++$i;
                                         ?>
                                         <div class="carousel-item <?php if($i  == 1 ) echo 'active' ?>">
-                                            <div class="carousel-caption">
+                                            <!-- <div class="carousel-caption">
                                                 <div class="carousel_content">
                                                     <h1>KAOSTUM.ID</h1>
                                                     <p>Desain merchandise sesuka kamu dengan mudah dan cepat tanpa ribet.</p>
                                                 </div>
-                                            </div>
+                                            </div> -->
                                             <img class="d-block w-100 imgslider" src="<?php echo base_url(); ?>assets/banners/<?php echo $list->image_name;?>" alt="First slide">
                                         </div>
                                     <?php }

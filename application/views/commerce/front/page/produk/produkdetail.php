@@ -66,8 +66,8 @@
                     ?>
                 </span>
                 <div class="button_order">
-                    <a target="_blank" href="https://api.whatsapp.com/send?phone=+6281928529335&text=Assalamu'alaikum Wr Wb, Apakah produk <?= $produk[0]->nama_produk; ?> ini tersedia <?=  base_url();?>produk/detail/<?= $produk[0]->id?>"><button class="btn btn-success">Order via Whatsapp <span></span></button></a>
-                    <button class="btn btn-primary" id="pesan_form">Order via Form</button>
+                    <a target="_blank" href="https://api.whatsapp.com/send?phone=+6281928529335&text=Assalamu'alaikum Wr Wb, Apakah produk <?= $produk[0]->nama_produk; ?> ini tersedia <?=  base_url();?>produk/detail/<?= $produk[0]->id?>"><button class="btn btn-sm btn-success">Order via Whatsapp <span></span></button></a>
+                    <button class="btn btn-sm btn-outline-dark" id="pesan_form">Order via Form</button>
                 </div>
                 <div id="inputform" style="margin-top:20px;display:none;">
                     <form method="POST" action="<?= base_url()?>/commerce_main/form_purchase">
@@ -81,7 +81,7 @@
                                     <input type="hidden" name="link_produk" class="form-control" placeholder="" value="produk/detail/<?= $produk[0]->id; ?>">
                                 </div>
                                 <div class="form-group">
-                                    <input type="submit" class="btn btn-xs btn-outline-primary" placeholder="Masukkan Nomor Handphone">
+                                    <input type="submit" class="btn btn-sm btn-outline-primary" placeholder="Masukkan Nomor Handphone">
                                 </div>
                             </div>
                         </div>

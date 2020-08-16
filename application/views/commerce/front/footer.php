@@ -22,7 +22,8 @@
             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                 <ul class="list-unstyled text-small listfooters">
                     <li>
-                    <a href="<?php echo base_url();?>"><img width="250" style="margin-right:40px;margin-bottom:27px;" src="<?php echo base_url()?>/assets/logo_kaostum_panjang_black.svg"></a>
+                    <!-- <a href="<?php echo base_url();?>"><span id="" style="font-weight:bold;color:#BF9B30;margin-right:50px;font-size:40px;font-family:'Lato', sans-serif;">Alisha Marsya</span></a>-->
+                    <a href="<?php echo base_url();?>"><img width="220" style="margin-right:40px;margin-bottom:20px;" src="<?php echo base_url()?>/assets/logo.svg"/></a>
                     </li>
                     <li class="text-muted">
                         Jl. Angkatan 66 No.ujung, Pipa Jaya, Kec. Kemuning, Kota Palembang, Sumatera Selatan
@@ -58,7 +59,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-6 col-md-6 col-xs-12">
-                <p class="text-muted">Copyright © 2020. All Right Reserved. <a style="" href='http://marcodigitalpartner.com/'>Marco Digital Partner.</a>
+                <p class="text-muted">Copyright © 2020. All Right Reserved. <a style="color:#999;" target="_blank" href='http://marcodigitalpartner.com/'>Marco Digital Partner.</a>
                 <div class="">
                 </div>
             </div>

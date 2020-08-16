@@ -1,5 +1,8 @@
 <div class="splash-container">
-    <center><h1 style="font-family:'Montserrat', sans-serif;font-weight:bold;">KAOSTUM.ID</h1></center>
+    <!-- <center><h1 style="font-family:'Montserrat', sans-serif;font-weight:bold;">KAOSTUM.ID</h1></center> -->
+    <center>
+        <a href="<?php echo base_url();?>"><img width="250" style="margin-bottom:20px;" src="<?php echo base_url()?>/assets/logo.svg"></a>
+    </center>
     <br/>
     <div class="card ">
         <div class="card-header text-center">

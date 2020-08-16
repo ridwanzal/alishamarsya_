@@ -1,5 +1,5 @@
-<section style="padding-top:40px;padding-bottom:40px;">
-    <div class="container">
+<section style="padding-top:10px;padding-bottom:10px;">
+    <div class="container_fluid m-l-5 m-r-5" style="padding-left:10px;padding-right:10px;">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-xs-12">
                 <div class="demo hasActive">
@@ -23,8 +23,8 @@
 </section> 
 
 
-<section class="productlist">
-    <div class="container">
+<section class="productlist m-l-5 m-r-5" style="padding-top:10px;">
+    <div class="container_fluid m-l-5 m-r-5" style="padding-left:10px;padding-right:10px;">
         <div class="breadcrumbs_wrapper">
             <div class="row">
                 <div class="col-lg-12 col-md-12">

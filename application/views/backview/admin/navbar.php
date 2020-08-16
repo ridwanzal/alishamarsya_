@@ -5,7 +5,10 @@
         <div class="dashboard-header">
             <nav class="navbar navbar-expand-lg bg-white fixed-top">
                 <!-- <a class="navbar-brand" href="index.html">Concept</a> -->
-                <center><a href="<?php echo base_url();?>"><h3 style="position:relative;top:7px;left:15px;">KAOSTUM.ID</h3></a></center>
+                <!-- <center><a href="<?php echo base_url();?>"><h3 style="position:relative;top:7px;left:15px;">KAOSTUM.ID</h3></a></center> -->
+                <center>
+                    <a href="<?php echo base_url();?>"><img width="150" style="margin-left:20px;" src="<?php echo base_url()?>/assets/logo.svg"></a>
+                </center>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>

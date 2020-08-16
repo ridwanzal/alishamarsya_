@@ -7,11 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="M. Ridwan Zalbina">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Kaostum.id</title>
+    <title>Alisha Marsya</title>
     <link rel="icon" href="<?php echo base_url();?>/assets/frontview/img/favicon.png" sizes="16x16" type="image/png">
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+    
     <!-- Css Styles -->
     <link rel="stylesheet" href="<?php echo base_url();?>/assets/frontview/css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="<?php echo base_url();?>/assets/frontview/css/font-awesome.min.css" type="text/css">
@@ -39,8 +43,6 @@
     <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
         integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
         crossorigin=""></script>
-
-
     <!-- 
         https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/ajax-loader.gif
     -->

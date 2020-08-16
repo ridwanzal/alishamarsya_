@@ -73,13 +73,14 @@ class Commerce_main extends CI_Controller {
 						product_thumb c
 						WHERE b.id = a.category_id 
 						AND c.id_product = a.id 
-						GROUP BY a.id ORDER BY id DESC LIMIT 4";
+						GROUP BY a.id ORDER BY id DESC LIMIT 8";
 			$query6_result = $this->db->query($query6)->result();		
 
 
 			$data['category_men'] = $query2_result;
 			$data['category_women'] = $query4_result;
 			$data['category_kids'] = $query5_result;
+			$data['category'] = $query6_result;
 			$data['banner'] = $query_result;
 			$data['banner_two'] = $query3_result;
 			$data['produk'] = $query6_result;

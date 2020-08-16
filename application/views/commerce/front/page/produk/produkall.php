@@ -1,5 +1,5 @@
 <section class="productlist">
-    <div class="container">
+    <div  class="container_fluid m-l-5 m-r-5" style="padding-left:10px;padding-right:10px;">
         <div class="breadcrumbs_wrapper">
             <div class="row">
                 <div class="col-lg-12 col-md-12">
