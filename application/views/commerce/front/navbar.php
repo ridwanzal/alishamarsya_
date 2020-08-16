@@ -13,98 +13,14 @@
               <li class="nav-item">
                 <a class="nav-link " href="<?php echo base_url();?>produk/semua">PRODUCTS <span class="sr-only"></span></a>
               </li>
-              <!-- <li class="nav-item dropdown megamenu"><a id="megamenu" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle font-weight-bold text-uppercase">MEN'S</a>
-                  <?php
-                    if(sizeof($category_men) > 0){
-                      ?>
-                          <div aria-labelledby="megamenu" class="dropdown-menu border-0 p-0 m-0 megamenu_containermain">
-                            <div class="container">
-                              <div class="row bg-white rounded-0 m-0 shadow-sm megamenu_whites">
-                                      <?php
-                                        $i = 0;
-                                        foreach($category_men as $categorymenu){
-                                          $i++;
-                                          ?>
-                                              <div class="col-lg-3">
-                                                <ul class="list-unstyled">
-                                                  <li class="nav-item"><a href="<?= base_url();?>produk/<?= $categorymenu->id; ?>/<?='men'?>" class="nav-link text-small pb-0 "><?= $categorymenu->name ?></a></li>
-                                                </ul>
-                                              </div>
-                                              <?php
-                                        }
-                                        ?>
-                              </div>
-                            </div>
-                          </div>
-                      <?php
-                    }
-                  ?>
-              </li> -->
-              <li class="nav-item dropdown ">
-                <a class="nav-link  dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  MEN'S
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <?php
-                    if(sizeof($category_men) > 0){
-                      ?>
-                        <?php
-                          $i = 0;
-                          foreach($category_men as $categorymenu){
-                            $i++;
-                            ?>
-                                <a href="<?= base_url();?>produk/<?= $categorymenu->id; ?>/<?='men'?>" class="dropdown-item"><?= $categorymenu->name ?></a>
-                            <?php
-                          }
-                          ?>
-                      <?php
-                    }
-                  ?>
-                </div>
+              <li class="nav-item">
+                <a class="nav-link " href="<?php echo base_url();?>produk/category/bantal">BANTAL <span class="sr-only"></span></a>
               </li>
-              <li class="nav-item dropdown ">
-                <a class="nav-link  dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  WOMEN'S
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <?php
-                    if(sizeof($category_women) > 0){
-                      ?>
-                        <?php
-                          $i = 0;
-                          foreach($category_women as $categorymenu){
-                            $i++;
-                            ?>
-                                <a href="<?= base_url();?>produk/<?= $categorymenu->id; ?>/<?='women'?>" class="dropdown-item"><?= $categorymenu->name ?></a>
-                            <?php
-                          }
-                          ?>
-                      <?php
-                    }
-                  ?>
-                </div>
+              <li class="nav-item">
+                <a class="nav-link " href="<?php echo base_url();?>produk/semua">TUDUNG SAJI <span class="sr-only"></span></a>
               </li>
-              <li class="nav-item dropdown ">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  KID'S
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <?php
-                    if(sizeof($category_kids) > 0){
-                      ?>
-                        <?php
-                          $i = 0;
-                          foreach($category_kids as $categorymenu){
-                            $i++;
-                            ?>
-                                <a href="<?= base_url();?>produk/<?= $categorymenu->id; ?>/<?='kids'?>" class="dropdown-item"><?= $categorymenu->name ?></a>
-                            <?php
-                          }
-                          ?>
-                      <?php
-                    }
-                  ?>
-                </div>
+              <li class="nav-item">
+                <a class="nav-link " href="<?php echo base_url();?>produk/semua">MAGIC COM <span class="sr-only"></span></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link " href="<?php echo base_url();?>produk/semua">GIFTS <span class="sr-only"></span></a>

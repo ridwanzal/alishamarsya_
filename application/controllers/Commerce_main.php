@@ -167,41 +167,6 @@ class Commerce_main extends CI_Controller {
 	public function productall(){
 		$data['title_bar'] = "";
 		$data['header_page'] = "";
-		$query = "SELECT * FROM banner";
-		$query_result = $this->db->query($query)->result();
-		
-		$query2 = "SELECT
-					a.id,
-					a.name
-					FROM
-					category a, product b
-					WHERE a.id = b.category_id
-					AND b.gender = 'men'
-					group by a.id";
-		$query2_result = $this->db->query($query2)->result();
-
-		$query4 = "SELECT
-					a.id,
-					a.name
-					FROM
-					category a, product b
-					WHERE a.id = b.category_id
-					AND b.gender = 'women'
-					group by a.id";
-		$query4_result = $this->db->query($query4)->result();
-
-		$query5 = "SELECT
-					a.id,
-					a.name
-					FROM
-					category a, product b
-					WHERE a.id = b.category_id
-					AND b.gender = 'kids'
-					group by a.id";
-		$query5_result = $this->db->query($query5)->result();
-
-		// var_dump($query2_result);die;
-		
 		$query6 = "SELECT 
 					a.id,
 					a.name as nama_produk, 
@@ -220,15 +185,37 @@ class Commerce_main extends CI_Controller {
 					AND c.id_product = a.id 
 					GROUP BY a.id";
 		$query6_result = $this->db->query($query6)->result();			
-		
-		$data['banner'] = $query_result;
 		$data['produk'] = $query6_result;
+		$this->load->view('commerce/front/header', $data);
+		$this->load->view('commerce/front/navbar', $data);
+		$this->load->view('commerce/front/page/produk/produkall', $data);
+		$this->load->view('commerce/front/footer', $data);
+	}
 
-		$data['category_men'] = $query2_result;
-		$data['category_women'] = $query4_result;
-		$data['category_kids'] = $query5_result;
-		
-		
+
+	public function product_category($category){
+		$data['title_bar'] = "";
+		$data['header_page'] = "";
+		$query6 = "SELECT 
+					a.id,
+					a.name as nama_produk, 
+					b.name as nama_kategori,
+					c.image_name,
+					a.gender,
+					a.price,
+					a.discount,
+					a.details,
+					a.offers
+					FROM
+					product a, 
+					category b,
+					product_thumb c
+					WHERE b.id = a.category_id 
+					AND c.id_product = a.id 
+					AND b.name = '$category'
+					GROUP BY a.id";
+		$query6_result = $this->db->query($query6)->result();			
+		$data['produk'] = $query6_result;
 		$this->load->view('commerce/front/header', $data);
 		$this->load->view('commerce/front/navbar', $data);
 		$this->load->view('commerce/front/page/produk/produkall', $data);

@@ -25,6 +25,7 @@
                                         <?php echo form_open_multipart('admin/addcategory'); ?>
                                             <h5 class="card-header">Tambah Kategori Baru</h5>
                                             <div class="card-body">
+                                                    <label style="color:#ff0000;">Usahakan menggunakan huruf kecil (lowercase) dan spasi diganti dengan underscore ( _ ) </label>
                                                     <div class="form-group">
                                                         <label for="inputText3" class="col-form-label">Nama</label>
                                                         <input id="inputText3" name="name" type="text" class="form-control" placeholder="Nama kategori" required>
