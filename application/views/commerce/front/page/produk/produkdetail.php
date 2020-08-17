@@ -6,7 +6,6 @@
                     <ul class="breadcrumbs">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">Produk</a></li>
-                        <li><a href="#"><?= $produk[0]->gender; ?></a></li>
                         <li><?= $produk[0]->nama_produk; ?></li>    
                         <li></li>
                     </ul>
