@@ -46,8 +46,8 @@
             </div>
             <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
                 <div class="listfooters" style="display:flex;float:left;" id="footer_rights2">
-                        <a target="_blank" href="https://www.facebook.com/Bantalcantiksalisha-163090534295782"><img src="https://image.flaticon.com/icons/svg/145/145802.svg" style="width:40px;"></a>
-                        <a target="_blank" href="https://www.instagram.com/alishamarsya/"><img src="https://image.flaticon.com/icons/svg/145/145805.svg" style="width:40px;"></a>
+                        <a target="_blank" href="https://www.facebook.com/bantalcantiks"><img src="https://image.flaticon.com/icons/svg/145/145802.svg" style="width:40px;"></a>
+                        <a target="_blank" href="https://www.instagram.com/bantalcantiks_alisha/"><img src="https://image.flaticon.com/icons/svg/145/145805.svg" style="width:40px;"></a>
                         <!-- <a href="#"><img src="https://image.flaticon.com/icons/svg/145/145812.svg" style="width:40px;"></a> -->
                 </div>
             </div>
