@@ -27,8 +27,13 @@
                                             <div class="card-body">
                                                     <label style="color:#ff0000;">Usahakan menggunakan huruf kecil (lowercase) dan spasi diganti dengan underscore ( _ ) </label>
                                                     <div class="form-group">
-                                                        <label for="inputText3" class="col-form-label">Nama</label>
+                                                        <label for="inputText3" class="col-form-label">Nama Kategori</label>
                                                         <input id="inputText3" name="name" type="text" class="form-control" placeholder="Nama kategori" required>
+                                                    </div>
+                                                    <label style="color:#ff0000;">Deskripsi yang digunakan untuk ditampilkan ke halaman (gunakan kata baku yang benar) </label>
+                                                    <div class="form-group">
+                                                        <label for="inputText3" class="col-form-label">Deskripsi</label>
+                                                        <input id="inputText3" name="description" type="text" class="form-control" placeholder="Nama kategori" required>
                                                     </div>
                                                     <!-- <input type="submit" value="Simpan sebagai Draft" class="btn btn-sm btn-primar y" name="submit_draft_blog" id="submit blog"/>  -->
                                                     <input style="padding-left:20px;padding-right:20px;" type="submit" value="Post" class="btn btn-sm btn-success" name="submit" id="submit blog"/> 

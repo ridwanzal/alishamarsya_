@@ -15,6 +15,9 @@ class Commerce_main extends CI_Controller {
 		$this->load->helper('form');
 		$this->load->library('form_validation');
 		date_default_timezone_set('Asia/Jakarta'); // default time zone indonesia
+		$query7 = "SELECT * FROM category";
+		$query7_result = $this->db->query($query7)->result();
+		$this->public['category'] = $query7_result;
 	}
 	
 	public function index()
@@ -23,39 +26,8 @@ class Commerce_main extends CI_Controller {
 			$data['header_page'] = "";
 			$query = "SELECT * FROM banner";
 			$query_result = $this->db->query($query)->result();
-			
 			$query3 = "SELECT * FROM banner_two";
 			$query3_result = $this->db->query($query3)->result();
-
-			$query2 = "SELECT
-						a.id,
-						a.name
-						FROM
-						category a, product b
-						WHERE a.id = b.category_id
-						AND b.gender = 'men'
-						group by a.id";
-			$query2_result = $this->db->query($query2)->result();
-
-			$query4 = "SELECT
-						a.id,
-						a.name
-						FROM
-						category a, product b
-						WHERE a.id = b.category_id
-						AND b.gender = 'women'
-						group by a.id";
-			$query4_result = $this->db->query($query4)->result();
-
-			$query5 = "SELECT
-						a.id,
-						a.name
-						FROM
-						category a, product b
-						WHERE a.id = b.category_id
-						AND b.gender = 'kids'
-						group by a.id";
-			$query5_result = $this->db->query($query5)->result();
 
 			$query6 = "SELECT 
 						a.id,
@@ -74,13 +46,9 @@ class Commerce_main extends CI_Controller {
 						WHERE b.id = a.category_id 
 						AND c.id_product = a.id 
 						GROUP BY a.id ORDER BY id DESC LIMIT 8";
-			$query6_result = $this->db->query($query6)->result();		
-
-
-			$data['category_men'] = $query2_result;
-			$data['category_women'] = $query4_result;
-			$data['category_kids'] = $query5_result;
-			$data['category'] = $query6_result;
+			$query6_result = $this->db->query($query6)->result();	
+			
+			$data['category'] = $this->public['category'];
 			$data['banner'] = $query_result;
 			$data['banner_two'] = $query3_result;
 			$data['produk'] = $query6_result;
@@ -97,38 +65,6 @@ class Commerce_main extends CI_Controller {
 		$data['header_page'] = "";
 		$query = "SELECT * FROM banner";
 		$query_result = $this->db->query($query)->result();
-		
-		$query2 = "SELECT
-					a.id,
-					a.name
-					FROM
-					category a, product b
-					WHERE a.id = b.category_id
-					AND b.gender = 'men'
-					group by a.id";
-		$query2_result = $this->db->query($query2)->result();
-
-		$query4 = "SELECT
-					a.id,
-					a.name
-					FROM
-					category a, product b
-					WHERE a.id = b.category_id
-					AND b.gender = 'women'
-					group by a.id";
-		$query4_result = $this->db->query($query4)->result();
-
-		$query5 = "SELECT
-					a.id,
-					a.name
-					FROM
-					category a, product b
-					WHERE a.id = b.category_id
-					AND b.gender = 'kids'
-					group by a.id";
-		$query5_result = $this->db->query($query5)->result();
-
-		// var_dump($query2_result);die;
 		
 		$query6 = "SELECT 
 					a.id,
@@ -156,7 +92,7 @@ class Commerce_main extends CI_Controller {
 		$data['category_men'] = $query2_result;
 		$data['category_women'] = $query4_result;
 		$data['category_kids'] = $query5_result;
-		
+		$data['category'] = $this->public['category'];
 		
 		$this->load->view('commerce/front/header', $data);
 		$this->load->view('commerce/front/navbar', $data);
@@ -186,6 +122,7 @@ class Commerce_main extends CI_Controller {
 					GROUP BY a.id";
 		$query6_result = $this->db->query($query6)->result();			
 		$data['produk'] = $query6_result;
+		$data['category'] = $this->public['category'];
 		$this->load->view('commerce/front/header', $data);
 		$this->load->view('commerce/front/navbar', $data);
 		$this->load->view('commerce/front/page/produk/produkall', $data);
@@ -216,6 +153,7 @@ class Commerce_main extends CI_Controller {
 					GROUP BY a.id";
 		$query6_result = $this->db->query($query6)->result();			
 		$data['produk'] = $query6_result;
+		$data['category'] = $this->public['category'];
 		$this->load->view('commerce/front/header', $data);
 		$this->load->view('commerce/front/navbar', $data);
 		$this->load->view('commerce/front/page/produk/produkall', $data);
@@ -228,6 +166,7 @@ class Commerce_main extends CI_Controller {
 		$query = "SELECT * FROM banner";
 		$query_result = $this->db->query($query)->result();
 		$data['banner'] = $query_result;
+		$data['category'] = $this->public['category'];
 		$this->load->view('commerce/front/header', $data);
 		$this->load->view('commerce/front/navbar', $data);
 		$this->load->view('commerce/front/page/produk/produk', $data);
@@ -283,48 +222,11 @@ class Commerce_main extends CI_Controller {
 
 		$query5 = "SELECT * FROM product_thumb WHERE id_product = '$id' ";
 		$query5_result = $this->db->query($query5)->result();
-
-		
-		
-		$query6 = "SELECT
-				a.id,
-				a.name
-				FROM
-				category a, product b
-				WHERE a.id = b.category_id
-				AND b.gender = 'men'
-				group by a.id";
-		$query6_result = $this->db->query($query6)->result();
-		
-		$query7 = "SELECT
-				a.id,
-				a.name
-				FROM
-				category a, product b
-				WHERE a.id = b.category_id
-				AND b.gender = 'women'
-				group by a.id";
-		$query7_result = $this->db->query($query7)->result();
-
-		$query8 = "SELECT
-				a.id,
-				a.name
-				FROM
-				category a, product b
-				WHERE a.id = b.category_id
-				AND b.gender = 'kids'
-				group by a.id";
-		$query8_result = $this->db->query($query8)->result();
-		
-		
 		$data['banner'] = $query_result;
 		$data['produk'] = $query2_result;
 		$data['produklain'] = $query4_result;
 		$data['thumb'] = $query5_result;
-		$data['category_men'] = $query6_result;
-		$data['category_women'] = $query7_result;
-		$data['category_kids'] = $query8_result;
-
+		$data['category'] = $this->public['category'];
 		$this->load->view('commerce/front/header', $data);
 		$this->load->view('commerce/front/navbar', $data);
 		$this->load->view('commerce/front/page/produk/produkdetail', $data);
@@ -374,46 +276,13 @@ class Commerce_main extends CI_Controller {
 				WHERE c.id_product = a.id
 				AND a.name  like '%$keyword_search%' GROUP BY a.id";
 		$query_result = $this->db->query($query)->result();
-		
-
-		$qmen = "SELECT
-				a.id,
-				a.name
-				FROM
-				category a, product b
-				WHERE a.id = b.category_id
-				AND b.gender = 'men'
-				group by a.id";
-		$qrmen = $this->db->query($qmen)->result();
-		
-		$qwomen = "SELECT
-				a.id,
-				a.name
-				FROM
-				category a, product b
-				WHERE a.id = b.category_id
-				AND b.gender = 'women'
-				group by a.id";
-		$qrwomen = $this->db->query($qwomen)->result();
-
-		$qkids = "SELECT
-				a.id,
-				a.name
-				FROM
-				category a, product b
-				WHERE a.id = b.category_id
-				AND b.gender = 'kids'
-				group by a.id";
-		$qrkids = $this->db->query($qkids)->result();
         // echo '<pre>'; 
         //   var_dump($query_result);die;
         // echo '</pre>';
         // echo $result;
 		$data['search_result'] = $query_result;
 		$data['produk'] = $query_result;
-		$data['category_men'] = $qrmen;
-		$data['category_women'] = $qrwomen;
-		$data['category_kids'] = $qrkids;
+		$data['category'] = $this->public['category'];
 		$this->load->view('commerce/front/header', $data);
 		$this->load->view('commerce/front/navbar', $data);
 		$this->load->view('commerce/front/page/search/search', $data);

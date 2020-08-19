@@ -61,8 +61,10 @@ class Admin extends CI_Controller {
 
       public function addcategory(){
         $name = $this->input->post('name', TRUE);
+        $description = $this->input->post('description', TRUE);
         $data = array(
-          'name' => $name
+          'name' => $name,
+          'description' => $description
         );
   
         $this->db->insert('category', $data);
