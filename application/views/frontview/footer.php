@@ -46,6 +46,15 @@
                         <a href="https://instagram.com/rs_islam_arrasyid"><img src="https://image.flaticon.com/icons/svg/145/145805.svg" style="width:40px;"></a>
                         <!-- <a href="#"><img src="https://image.flaticon.com/icons/svg/145/145812.svg" style="width:40px;"></a> -->
                         <!-- <a href="#"><img src="https://image.flaticon.com/icons/svg/1384/1384060.svg" style="width:40px;"></a> -->
+                        <div class="btn-group dropup">
+                            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Dropup
+                            </button>
+                            <div class="dropdown-menu">
+                                <!-- Dropdown menu links -->
+                            </div>
+                        </div>
+
                 </div>
             </div>
         </div>

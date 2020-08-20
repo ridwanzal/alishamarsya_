@@ -44,9 +44,28 @@
             </div>
             <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
                 <div class="listfooters" style="display:flex;float:left;" id="footer_rights2">
-                        <a target="_blank" href="https://www.facebook.com/bantalcantiks"><img src="https://image.flaticon.com/icons/svg/145/145802.svg" style="width:40px;"></a>
-                        <a target="_blank" href="https://www.instagram.com/bantalcantiks_alisha/"><img src="https://image.flaticon.com/icons/svg/145/145805.svg" style="width:40px;"></a>
+                        <!-- <a target="_blank" href="https://www.instagram.com/bantalcantiks_alisha/"><img src="https://image.flaticon.com/icons/svg/145/145805.svg" style="width:40px;"></a> -->
                         <!-- <a href="#"><img src="https://image.flaticon.com/icons/svg/145/145812.svg" style="width:40px;"></a> -->
+                        <div class="btn-group dropup" >
+                            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background:#fafafa !important;border:#fafafa;">
+                                <img src="https://image.flaticon.com/icons/svg/145/145802.svg" style="width:40px;">
+                            </button>
+                            <div class="dropdown-menu">
+                                <!-- <a target="_blank" href="https://www.facebook.com/bantalcantiks"><img src="https://image.flaticon.com/icons/svg/145/145802.svg" style="width:40px;"></a> -->
+                                <a class="dropdown-item" target="_blank" href="https://www.facebook.com/pages/Bantal-Cantiks-Alisha/1366884736743709?ref=br_rs">FB Bantal Cantiks</a>
+                                <a class="dropdown-item" target="_blank" href="https://www.facebook.com/alisha.marsya.90">FB Alisha Marsya</a>
+                            </div>
+                        </div>
+                        <div class="btn-group dropup" >
+                            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background:#fafafa !important;border:#fafafa;">
+                                <img src="https://image.flaticon.com/icons/svg/145/145805.svg" style="width:40px;">
+                            </button>
+                            <div class="dropdown-menu">
+                                <!-- <a target="_blank" href="https://www.facebook.com/bantalcantiks"><img src="https://image.flaticon.com/icons/svg/145/145802.svg" style="width:40px;"></a> -->
+                                <a class="dropdown-item" target="_blank" href="https://instagram.com/bantalcantiks_alisha?igshid=19232yf0vek89">IG Bantal Cantiks</a>
+                                <a class="dropdown-item" target="_blank" href="https://instagram.com/alishamarsya?igshid=u5gc8tf06wsu">IG Alisha Marsya</a>
+                            </div>
+                        </div>
                 </div>
             </div>
         </div>
@@ -75,7 +94,8 @@
 <a id="wafloats" href="https://api.whatsapp.com/send?phone=++628117870108&text=Assalamualaikum wr wb, Alisha Marsya" class="floatwa" target="_blank"><i class="fa fa-whatsapp my-floatwa"></i></a>
 <!-- Js Plugins -->
 <script src="<?php echo base_url();?>/assets/frontview/js/jquery-3.3.1.min.js"></script>
-<script src="<?php echo base_url();?>/assets/frontview/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="<?php echo base_url();?>/assets/frontview/js/jquery.magnific-popup.min.js"></script>
 <script src="<?php echo base_url();?>/assets/frontview/js/jquery-ui.min.js"></script>
 <script src="<?php echo base_url();?>/assets/frontview/js/jquery.nice-select.min.js"></script>
