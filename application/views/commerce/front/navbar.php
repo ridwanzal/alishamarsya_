@@ -10,36 +10,23 @@
         
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto navmain">
-              <!-- <li class="nav-item">
-                <a class="nav-link " href="<?php echo base_url();?>produk/semua">PRODUCTS <span class="sr-only"></span></a>
-              </li> -->
-              <li class="nav-item dropdown">
+              <!-- <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">CATEGORY</a>
                 <div class="dropdown-menu">
-                  <!-- <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Separated link</a> -->
                   <?php 
-                  // var_dump($category);die;
                   foreach($category as $item){
                     ?>
                       <a class="dropdown-item" href="<?php echo base_url();?>produk/category/<?php echo $item->name;?>"><?php echo $item->description;?></a>
                     <?php
                   }
-                    // var_dump($category);die;
                   ?>
                 </div>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link " href="<?php echo base_url();?>produk/category/bantal" style="text-transform:uppercase;">Printing Bantal Cantik Alisha <span class="sr-only"></span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="<?php echo base_url();?>produk/category/bantal">BANTAL <span class="sr-only"></span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="<?php echo base_url();?>produk/semua">TUDUNG SAJI <span class="sr-only"></span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="<?php echo base_url();?>produk/semua">MAGIC COM <span class="sr-only"></span></a>
+                <a class="nav-link " href="<?php echo base_url();?>produk/semua" style="text-transform:uppercase;">Home Made Alisha Marsya <span class="sr-only"></span></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link " href="<?php echo base_url();?>">KONTAK <span class="sr-only"></span></a>

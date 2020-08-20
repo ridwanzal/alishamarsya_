@@ -82,7 +82,7 @@ class Admin extends CI_Controller {
       public function addproduct(){
         $name = $this->input->post('name', TRUE);
         $category = $this->input->post('category', TRUE);
-        $gender = $this->input->post('gender', TRUE);
+        $business_type = $this->input->post('business_type', TRUE);
         $price = $this->input->post('price', TRUE);
         $discount = $this->input->post('discount', TRUE);
         $details = $this->input->post('details', TRUE);
@@ -91,7 +91,7 @@ class Admin extends CI_Controller {
         $data = array(
           'name' => $name,
           'category_id' => $category,
-          'gender' => $gender,
+          'business_type' => $business_type,
           'price' => $price,
           'discount' => $discount,
           'details' => $details,

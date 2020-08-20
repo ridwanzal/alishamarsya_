@@ -34,7 +34,7 @@ class Commerce_main extends CI_Controller {
 						a.name as nama_produk, 
 						b.name as nama_kategori,
 						c.image_name,
-						a.gender,
+						a.business_type,
 						a.price,
 						a.discount,
 						a.details,
@@ -71,7 +71,7 @@ class Commerce_main extends CI_Controller {
 					a.name as nama_produk, 
 					b.name as nama_kategori,
 					c.image_name,
-					a.gender,
+					a.business_type,
 					a.price,
 					a.discount,
 					a.details,
@@ -83,7 +83,7 @@ class Commerce_main extends CI_Controller {
 					WHERE b.id = a.category_id 
 					AND c.id_product = a.id
 					AND a.category_id  = '$category'
-					AND a.gender = '$gender' GROUP BY a.id";
+					AND a.business_type = '$gender' GROUP BY a.id";
 		$query6_result = $this->db->query($query6)->result();			
 		
 		$data['banner'] = $query_result;
@@ -108,7 +108,7 @@ class Commerce_main extends CI_Controller {
 					a.name as nama_produk, 
 					b.name as nama_kategori,
 					c.image_name,
-					a.gender,
+					a.business_type,
 					a.price,
 					a.discount,
 					a.details,
@@ -138,7 +138,7 @@ class Commerce_main extends CI_Controller {
 					a.name as nama_produk, 
 					b.name as nama_kategori,
 					c.image_name,
-					a.gender,
+					a.business_type,
 					a.price,
 					a.discount,
 					a.details,
@@ -184,7 +184,7 @@ class Commerce_main extends CI_Controller {
 				a.name as nama_produk, 
 				b.name as nama_kategori,
 				c.image_name,
-				a.gender,
+				a.business_type,
 				a.price,
 				a.discount,
 				a.details,
@@ -206,7 +206,7 @@ class Commerce_main extends CI_Controller {
 				a.name as nama_produk, 
 				b.name as nama_kategori,
 				c.image_name,
-				a.gender,
+				a.business_type,
 				a.price,
 				a.discount,
 				a.details,
@@ -264,7 +264,7 @@ class Commerce_main extends CI_Controller {
 				a.name as nama_produk, 
 				b.name as nama_kategori,
 				c.image_name,
-				a.gender,
+				a.business_type,
 				a.price,
 				a.discount,
 				a.details,

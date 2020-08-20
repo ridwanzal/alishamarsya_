@@ -51,13 +51,11 @@
                                                 </select>
                                             </div>
                                             <div class="form-group">
-                                                <label for="input-select">Gender</label>
-                                                <select class="form-control" id="input-select" name="gender"  required>
-                                                    <option value="">Pilih Gender</option>
-                                                    <option value="1">Men's</option>
-                                                    <option value="2">Women</option>
-                                                    <option value="3">Unisex</option>
-                                                    <option value="4">Kids</option>
+                                                <label for="input-select">Pilih Tipe Usaha</label>
+                                                <select class="form-control" id="input-select" name="business_type"  required>
+                                                    <option value="">Pilih Tipe Usaha</option>
+                                                    <option value="bantal">PRINTING BANTAL CANTIK ALISHA</option>
+                                                    <option value="home_made">HOME MADE ALISHA MARSYA</option>
                                                 </select>
                                             </div>
                                             <div class="row">
@@ -110,7 +108,7 @@
                                                     <th>Id</th>
                                                     <th>Nama Produk</th>
                                                     <th>Category Id</th>
-                                                    <th>Gender</th>
+                                                    <th>Business Type</th>
                                                     <th>Price</th>
                                                     <th>Discount</th>
                                                     <th>Details</th>
@@ -136,7 +134,7 @@
                                                             <td><?php echo $list->id;; ?></td>
                                                             <td><?php echo $list->name; ?></td>
                                                             <td><?php echo $list->category_id; ?></td>
-                                                            <td><?php echo $list->gender; ?></td>
+                                                            <td><?php echo $list->business_type; ?></td>
                                                             <td><?php echo $list->price; ?></td>
                                                             <td><?php echo $list->discount; ?></td>
                                                             <td><?php echo $list->details; ?></td>

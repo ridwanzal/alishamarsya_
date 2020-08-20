@@ -292,6 +292,9 @@ body {
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
+    .searchers{
+        width:89% !important;
+    }
     .upload_component {
         padding-top: 30px !important;
         position: relative;
@@ -330,7 +333,7 @@ body {
         bottom: 40px;
     }
     .navbar-light .navbar-toggler-icon {
-        background-image: url('https://image.flaticon.com/icons/svg/847/847734.svg') !important;
+        background-image: url('https://image.flaticon.com/icons/svg/633/633647.svg') !important;
     }
     .searchings {
         padding-bottom: 19px;
@@ -339,7 +342,7 @@ body {
         color: #ffffff !important;
     }
     .navbar-light .navbar-toggler {
-        border: 1px solid #000000;
+        border: 1px solid #fff;
     }
     .infobar {
         display: none;
