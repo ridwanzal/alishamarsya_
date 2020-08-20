@@ -1,5 +1,5 @@
 
-<section class="newsletters">
+<section class="newsletters" stlyle="display:none;">
     <div class="container">
         <div class="row">
             <div class="col-lg-6 col-md-6 col-xs-12">
@@ -33,8 +33,6 @@
             <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
                 <ul class="list-unstyled text-small listfooters">
                     <li><a class="text-muted" href="#">About Us</a></li>
-                    <li><a class="text-muted" href="#">Fanbook</a></li>
-                    <li><a class="text-muted" href="#">Blog</a></li>
                     <li><a class="text-muted" href="#">Terms of Service</a></li>
                 </ul>
             </div>
