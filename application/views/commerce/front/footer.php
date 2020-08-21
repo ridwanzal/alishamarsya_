@@ -91,7 +91,28 @@
     </div>
 </section>
 
-<a id="wafloats" href="https://api.whatsapp.com/send?phone=++628117870108&text=Assalamualaikum wr wb, Alisha Marsya" class="floatwa" target="_blank"><i class="fa fa-whatsapp my-floatwa"></i></a>
+<!-- <a id="wafloats" href="https://api.whatsapp.com/send?phone=++628117870108&text=Assalamualaikum wr wb, Alisha Marsya" class="floatwa" target="_blank"><i class="fa fa-whatsapp my-floatwa"></i></a> -->
+<a class="floatwa" style="margin-top:40px;" id="wafloats" data-toggle="modal" data-target="#exampleModalLong"><i class="fa fa-whatsapp my-floatwa"></i></a>
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Whatsapp Link</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <a href="https://api.whatsapp.com/send?phone=+62817250816&text=Assalamualaikum wr wb, Alisha Marsya" target="_blank" class="btn btn-success btn-block">Bantal Cantik Alisha</a>
+        <a href="https://api.whatsapp.com/send?phone=+62817250816&text=Assalamualaikum wr wb, Alisha Marsya" target="_blank" class="btn btn-primary btn-block">Alisha Marsya Official</a>
+        <!-- <a href="https://api.whatsapp.com/send?phone=+62817250816&text=Assalamualaikum wr wb, Alisha Marsya" class="floatwa" target="_blank"><button class="btn btn-primary btn-block">Alisha Marsya</button></a> -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 <!-- Js Plugins -->
 <script src="<?php echo base_url();?>/assets/frontview/js/jquery-3.3.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
