@@ -64,10 +64,23 @@
                         }
                     ?>
                 </span>
-                <div class="button_order">
-                    <a target="_blank" href="https://api.whatsapp.com/send?phone=+6281928529335&text=Assalamu'alaikum Wr Wb, Apakah produk <?= $produk[0]->nama_produk; ?> ini tersedia <?=  base_url();?>produk/detail/<?= $produk[0]->id?>"><button class="btn btn-sm btn-success">Order via Whatsapp <span></span></button></a>
-                    <button class="btn btn-sm btn-outline-dark" id="pesan_form">Order via Form</button>
-                </div>
+                <?php
+                    if($produk[0]->business_type == 'bantal'){
+                        ?>
+                            <div class="button_order">
+                                <a target="_blank" href="https://api.whatsapp.com/send?phone=+628117870108&text=Assalamu'alaikum Wr Wb, Apakah produk <?= $produk[0]->nama_produk; ?> ini tersedia <?=  base_url();?>produk/detail/<?= $produk[0]->id?>"><button class="btn btn-sm btn-success">Order via Whatsapp <span></span></button></a>
+                                <button class="btn btn-sm btn-outline-dark" id="pesan_form">Order via Form</button>
+                            </div>
+                        <?php
+                    }else{
+                        ?>
+                            <div class="button_order">
+                                <a target="_blank" href="https://api.whatsapp.com/send?phone=+62817250816&text=Assalamu'alaikum Wr Wb, Apakah produk <?= $produk[0]->nama_produk; ?> ini tersedia <?=  base_url();?>produk/detail/<?= $produk[0]->id?>"><button class="btn btn-sm btn-success">Order via Whatsapp <span></span></button></a>
+                                <button class="btn btn-sm btn-outline-dark" id="pesan_form">Order via Form</button>
+                            </div>
+                        <?php
+                    }
+                ?>
                 <div id="inputform" style="margin-top:20px;display:none;">
                     <form method="POST" action="<?= base_url()?>/commerce_main/form_purchase">
                         <div class="row">

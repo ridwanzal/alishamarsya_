@@ -54,8 +54,8 @@
                                                 <label for="input-select">Pilih Tipe Usaha</label>
                                                 <select class="form-control" id="input-select" name="business_type"  required>
                                                     <option value="">Pilih Tipe Usaha</option>
-                                                    <option value="bantal">PRINTING BANTAL CANTIK ALISHA</option>
-                                                    <option value="home_made">HOME MADE ALISHA MARSYA</option>
+                                                    <option value="bantal">PRINTING PRODUCTS (BANTAL CANTIK ALISHA)</option>
+                                                    <option value="home_made">HANDMADE PRODUCTS (ALISHA MARSYA)</option>
                                                 </select>
                                             </div>
                                             <div class="row">

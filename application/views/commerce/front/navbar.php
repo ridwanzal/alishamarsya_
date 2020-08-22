@@ -23,10 +23,10 @@
                 </div>
               </li> -->
               <li class="nav-item">
-                <a class="nav-link " href="<?php echo base_url();?>produk/category/bantal" style="text-transform:uppercase;">Printing Bantal Cantik Alisha <span class="sr-only"></span></a>
+                <a class="nav-link " href="<?php echo base_url();?>produk/category/bantal" style="text-transform:uppercase;">PRINTING PRODUCTS (BANTAL CANTIKs ALISHA)<span class="sr-only"></span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="<?php echo base_url();?>produk/semua" style="text-transform:uppercase;">Home Made Alisha Marsya <span class="sr-only"></span></a>
+                <a class="nav-link " href="<?php echo base_url();?>produk/semua" style="text-transform:uppercase;">HANDMADE PRODUCTS (ALISHA MARSYA)<span class="sr-only"></span></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link " href="<?php echo base_url();?>">KONTAK <span class="sr-only"></span></a>
@@ -44,6 +44,7 @@
                 <div style:display:flex; class="searchings">
                   <input name="keyword" 
                     style="padding-left:5px;
+                          width:120px;
                           background:#fff;
                           border:1px solid #aaa;
                           border-radius:2px;
