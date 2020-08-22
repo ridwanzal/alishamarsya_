@@ -283,7 +283,7 @@ body {
 }
 
 #wafloats {
-    display: none;
+    display: block;
 }
 
 .upload_component {
