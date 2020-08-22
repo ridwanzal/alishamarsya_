@@ -1827,7 +1827,7 @@ Leftsidebar - dark
 
 .sidebar-dark.nav-left-sidebar .navbar-nav .nav-link:focus,
 .sidebar-dark.nav-left-sidebar .navbar-nav .nav-link.active {
-    background-color: #206f44;
+    background-color: #bf9a2f;
     color: #fff;
     border-radius: 2px;
 }
@@ -1835,7 +1835,7 @@ Leftsidebar - dark
 .sidebar-dark.nav-left-sidebar .submenu .nav .nav-item .nav-link:hover {
     color: #fff;
     border-radius: 2px;
-    background-color: #206f44;
+    background-color: #bf9a2f;
 }
 
 .sidebar-dark.nav-left-sidebar .navbar-nav .nav-item .badge {
