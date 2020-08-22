@@ -103,7 +103,7 @@
         </button>
       </div>
       <div class="modal-body">
-        <a href="https://api.whatsapp.com/send?phone=+628117870108&text=Assalamualaikum wr wb, Alisha Marsya" target="_blank" class="btn btn-success btn-block">Bantal Cantik Alisha</a>
+        <a href="https://api.whatsapp.com/send?phone=+628117870108&text=Assalamualaikum wr wb, Bantal Cantiks" target="_blank" class="btn btn-success btn-block">Bantal Cantiks Alisha</a>
         <a href="https://api.whatsapp.com/send?phone=+62817250816&text=Assalamualaikum wr wb, Alisha Marsya" target="_blank" class="btn btn-primary btn-block">Alisha Marsya Official</a>
         <!-- <a href="https://api.whatsapp.com/send?phone=+62817250816&text=Assalamualaikum wr wb, Alisha Marsya" class="floatwa" target="_blank"><button class="btn btn-primary btn-block">Alisha Marsya</button></a> -->
       </div>
