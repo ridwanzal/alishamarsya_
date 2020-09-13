@@ -287,6 +287,12 @@ class Commerce_main extends CI_Controller {
 		$this->load->view('commerce/front/navbar', $data);
 		$this->load->view('commerce/front/page/search/search', $data);
 		$this->load->view('commerce/front/footer', $data);
+	  }
+
+	  public function delete($id){
+        $this->db->where('id', $id);
+		$this->db->delete('product');
+		redirect(base_url('admin'));
       }
 
 

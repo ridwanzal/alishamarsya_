@@ -20,7 +20,7 @@
                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                         <div class="card">
                                 <?php echo form_open_multipart('admin/addproduct'); ?>
-                                    <h5 class="card-header">Tambah Produk Baru</h5>
+                                    <h5 class="card-header">Tambah Produk Baru <span style="color:red;">Ukuran file maks (1.0MB)</span></h5>
                                     <div class="card-body">
                                             <div class="row">
                                                     <div class="col-lg-1 col-md-1 col-xs-6">
@@ -113,6 +113,7 @@
                                                     <th>Discount</th>
                                                     <th>Details</th>
                                                     <th>Offers</th>
+                                                    <th>Action</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -139,6 +140,9 @@
                                                             <td><?php echo $list->discount; ?></td>
                                                             <td><?php echo $list->details; ?></td>
                                                             <td><?php echo $list->offers; ?></td>
+                                                            <td style="display:flex;">
+                                                                <a href="<?php echo base_url()?>commerce_main/edit" class="btn btn-success btn-sm"><i class="fa fa-paint-brush"></i></a>&nbsp;<a href="<?php echo base_url()?>commerce_main/delete/<?php echo $list->id?>" class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></a>
+                                                            </td>
                                                         </tr>
                                                     <?php }
                                                 ?>
