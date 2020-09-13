@@ -132,6 +132,35 @@ class Admin extends CI_Controller {
         }
 
       }
+
+      public function deleteproduct($id){
+        $this->db->where('id', $id);
+        $this->db->delete('product');
+        redirect(base_url('admin'));
+      }
+
+
+      public function editproduct($id){
+        $data['title_bar'] = "";
+        $data['header_page'] = "";
+
+        $query2="SELECT b.id FROM product a, category b where a.id = $id";
+        $query_result2 = $this->db->query($query2)->result();
+
+        $query3 = "SELECT * FROM product where id = $id";
+        $query_result3 = $this->db->query($query3)->result();
+
+        $query4 = "SELECT * FROM product_thumb where id_product = $id";
+        $query_result4 = $this->db->query($query4)->result();
+        
+        $data['category'] = $query_result2;
+        $data['product'] = $query_result3;
+        $data['product_thumb'] = $query_result4;
+        $this->load->view('backview/header.php', $data);
+        $this->load->view('backview/admin/navbar.php', $data);
+        $this->load->view('backview/admin/dashboard/commerce/produk_edit.php', $data);
+        $this->load->view('backview/footer.php', $data);
+      }
   
 
 }

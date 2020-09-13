@@ -296,4 +296,42 @@ class Commerce_main extends CI_Controller {
       }
 
 
+	public function product_edit($id){
+		$data['title_bar'] = "";
+		$data['header_page'] = "";
+		$query = "SELECT * FROM banner";
+		$query_result = $this->db->query($query)->result();
+		$query3 = "SELECT * FROM banner_two";
+		$query3_result = $this->db->query($query3)->result();
+
+		$query6 = "SELECT 
+					a.id,
+					a.name as nama_produk, 
+					b.name as nama_kategori,
+					c.image_name,
+					a.business_type,
+					a.price,
+					a.discount,
+					a.details,
+					a.offers
+					FROM
+					product a, 
+					category b,
+					product_thumb c
+					WHERE b.id = a.category_id 
+					AND c.id_product = a.id 
+					AND a.id = $id
+					GROUP BY a.id ORDER BY id DESC LIMIT 8";
+		$query6_result = $this->db->query($query6)->result();	
+		
+		$data['category'] = $this->public['category'];
+		$data['banner'] = $query_result;
+		$data['banner_two'] = $query3_result;
+		$data['produk'] = $query6_result;
+		$this->load->view('commerce/front/header', $data);
+		$this->load->view('commerce/front/navbar', $data);
+		$this->load->view('commerce/front/page/index/index', $data);
+		$this->load->view('commerce/front/page/index/slider', $data);
+		$this->load->view('commerce/front/footer', $data);
+	}
 }
