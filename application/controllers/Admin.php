@@ -133,6 +133,58 @@ class Admin extends CI_Controller {
 
       }
 
+      public function editproduct(){
+        $id = $this->input->post('id', TRUE);
+        $id_thumb = $this->input->post('id_thumb', TRUE);
+        $name = $this->input->post('name', TRUE);
+        $category = $this->input->post('category', TRUE);
+        $business_type = $this->input->post('business_type', TRUE);
+        $price = $this->input->post('price', TRUE);
+        $discount = $this->input->post('discount', TRUE);
+        $details = $this->input->post('details', TRUE);
+        $offers = $this->input->post('offers', TRUE);
+
+        $data = array(
+          'name' => $name,
+          'category_id' => $category,
+          'business_type' => $business_type,
+          'price' => $price,
+          'discount' => $discount,
+          'details' => $details,
+          'offers' => $offers
+        );
+
+        $this->db->where('id', $id);
+        $this->db->update('product', $data);
+        $affect_row = $this->db->affected_rows();
+          $config['upload_path']          = './assets/product/';
+          $config['allowed_types']        = 'gif|jpg|png|jpeg';
+          $config['max_size']             = 100000;
+          $config['max_width']            = 8000;
+          $config['max_height']           = 100000;
+          $config['encrypt_name'] 		= false;
+          $this->load->library('upload',$config);
+          $jumlah_berkas = count($_FILES['berkas']['name']);
+          for($i = 0; $i < $jumlah_berkas; $i++){
+              if(!empty($_FILES['berkas']['name'][$i])){
+              $_FILES['file']['name'] = $_FILES['berkas']['name'][$i];
+              $_FILES['file']['type'] = $_FILES['berkas']['type'][$i];
+              $_FILES['file']['tmp_name'] = $_FILES['berkas']['tmp_name'][$i];
+              $_FILES['file']['error'] = $_FILES['berkas']['error'][$i];
+              $_FILES['file']['size'] = $_FILES['berkas']['size'][$i];
+           
+              if($this->upload->do_upload('file')){
+                $uploadData = $this->upload->data();
+                $datas['image_name'] = $uploadData['file_name'];
+                // $this->db->insert('product_thumb',$datas);
+                $this->db->where('id', $id_thumb);
+                $this->db->update('product_thumb', $datas);
+              }
+            }
+          } // end of loop
+          redirect(base_url("admin/"));
+      }
+
       public function deleteproduct($id){
         $this->db->where('id', $id);
         $this->db->delete('product');
@@ -140,7 +192,7 @@ class Admin extends CI_Controller {
       }
 
 
-      public function editproduct($id){
+      public function product_edit($id){
         $data['title_bar'] = "";
         $data['header_page'] = "";
 
@@ -153,7 +205,26 @@ class Admin extends CI_Controller {
         $query4 = "SELECT * FROM product_thumb where id_product = $id";
         $query_result4 = $this->db->query($query4)->result();
         
-        $data['category'] = $query_result2;
+        $query7 = "SELECT a.id, a.name
+                  FROM
+                  category a,
+                  product b
+                  WHERE
+                  a.id = b.category_id
+                  AND b.id = $id";
+        $query7_result = $this->db->query($query7)->result();	
+
+        $query8 = "SELECT a.id, a.name
+                  FROM
+                  category a,
+                  product b
+                  WHERE
+                  a.id = b.category_id
+                  GROUP BY a.id";
+
+        $query8_result = $this->db->query($query8)->result();
+        $data['category_selected'] = $query7_result;
+        $data['categories'] = $query8_result;
         $data['product'] = $query_result3;
         $data['product_thumb'] = $query_result4;
         $this->load->view('backview/header.php', $data);

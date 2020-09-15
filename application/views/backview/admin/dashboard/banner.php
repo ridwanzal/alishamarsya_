@@ -6,7 +6,7 @@
 	                <!-- ============================================================== -->
 	                <div class="row">
 	                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-	                        <div class="page-header">
+	                        <div class="page-header">git
 	                            <h3 class="mb-2">Kelola Banner</h3>
 	                            <div class="page-breadcrumb">
 	                                <nav aria-label="breadcrumb">

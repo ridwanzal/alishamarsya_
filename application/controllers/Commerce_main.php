@@ -323,8 +323,27 @@ class Commerce_main extends CI_Controller {
 					AND a.id = $id
 					GROUP BY a.id ORDER BY id DESC LIMIT 8";
 		$query6_result = $this->db->query($query6)->result();	
-		
-		$data['category'] = $this->public['category'];
+
+		$query7 = "SELECT a.id, a.name
+		FROM
+		category a,
+		product b
+		WHERE
+		a.id = b.category_id
+		AND b.id = $id";
+		$query7_result = $this->db->query($query7)->result();	
+
+		$query8 = "SELECT a.id, a.name
+		FROM
+		category a,
+		product b
+		WHERE
+		a.id = b.category_id
+		GROUP BY a.id";
+		$query8_result = $this->db->query($query8)->result();
+
+		$data['category_selected'] = $query7_result;
+		$data['categories'] = $query8_result;
 		$data['banner'] = $query_result;
 		$data['banner_two'] = $query3_result;
 		$data['produk'] = $query6_result;

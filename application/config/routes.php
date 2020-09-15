@@ -52,7 +52,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'commerce_main';
 $route['admin/banner'] = 'banner';
 $route['admin/bannertwo'] = 'banner/small_banner';
-$route['admin/produk/edit/(:any)'] = 'admin/editproduct/$1';
+$route['admin/produk/edit/(:any)'] = 'admin/product_edit/$1';
 $route['produk'] = 'commerce_main/productlist';
 $route['produk/semua'] = 'commerce_main/productall';
 $route['produk/category/(:any)'] = 'commerce_main/product_category/$1';
